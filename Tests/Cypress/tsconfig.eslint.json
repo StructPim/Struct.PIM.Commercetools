@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*.ts",
+    "cypress/**/*.ts",
+    "cypress/**/*.d.ts"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "skipLibCheck": true
+  }
+}

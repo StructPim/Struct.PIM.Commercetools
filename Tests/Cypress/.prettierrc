@@ -1,0 +1,9 @@
+  module.exports = {
+  trailingComma: 'all',
+  proseWrap: 'always',
+  jsxBracketSameLine: true,
+  bracketSpacing: true,
+  arrowParens: 'avoid',
+  printWidth: 160,
+  htmlWhitespaceSensitivity: 'ignore',
+  };

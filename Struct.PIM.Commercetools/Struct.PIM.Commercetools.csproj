@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <LangVersion>latestmajor</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="commercetools.Sdk.Api" Version="5.1.1" />
+        <PackageReference Include="commercetools.Sdk.ImportApi" Version="5.1.1" />
+        <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Filters.Abstractions" Version="7.0.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Struct.PIM.WebhookModels\Struct.PIM.WebhookModels.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Update="appsettings.json">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Struct.PIM.Api.Client">
+            <HintPath>..\dlls\Struct.PIM.Api.Client.dll</HintPath>
+        </Reference>
+        <Reference Include="Struct.PIM.Api.Models">
+            <HintPath>..\dlls\Struct.PIM.Api.Models.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Extensions" />
+    </ItemGroup>
+
+</Project>

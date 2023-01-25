@@ -1,0 +1,3675 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Struct.PIM.Api.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Struct.PIM.Api.Models.ArchiveReason.ArchiveReason">
+            <summary>
+            An archive reason defines a reason that can be chosen when archiving products or variants in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ArchiveReason.ArchiveReason.Uid">
+            <summary>
+            Unique id of archive reason
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ArchiveReason.ArchiveReason.Name">
+            <summary>
+            Presented name of archive reason
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Asset.AssetModel">
+            <summary>
+            Represents an asset in Struct PIM
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.Id">
+            <summary>
+            Unique id of asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.Name">
+            <summary>
+            Name of asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.Url">
+            <summary>
+            Url of asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.Extension">
+            <summary>
+            The file extension of the asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.FileType">
+            <summary>
+            The type of file this asset is (file or image)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.Type">
+            <summary>
+            The type of asset (as specified in SupportedAssetTypes)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.Created">
+            <summary>
+            Timestamp of asset creation
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.LastModified">
+            <summary>
+            Timestamp of last asset modification
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetModel.Properties">
+            <summary>
+            Properties
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Asset.CreateFolderModel">
+            <summary>
+            Folder information for creating a new folder
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.CreateFolderModel.ParentId">
+            <summary>
+            Id of parent to put this folder in (null if this folder shall be placed at root level)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.CreateFolderModel.Name">
+            <summary>
+            Name of folder
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Asset.FolderModel">
+            <summary>
+            Represents a folder in the mediabank
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.FolderModel.Id">
+            <summary>
+            Unique id of folder
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.FolderModel.ParentId">
+            <summary>
+            Id of parent folder (null if folder is at root level)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.FolderModel.Name">
+            <summary>
+            Name of folder
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Asset.AssetReferencesModel">
+            <summary>
+            Model holding references from other entities to a specific asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetReferencesModel.GlobalListValueReferences">
+            <summary>
+            Global list values referencing the asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetReferencesModel.VariantReferences">
+            <summary>
+            Variants referencing the asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetReferencesModel.ProductReferences">
+            <summary>
+            Products referencing the asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.AssetReferencesModel.CategoryReferences">
+            <summary>
+            Categories referencing the asset
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Asset.UpdateAssetModel">
+            <summary>
+            Model for updating an existing asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.UpdateAssetModel.FolderId">
+            <summary>
+            New folder id of asset
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.UpdateAssetModel.Filename">
+            <summary>
+            New name of asset
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Asset.UpdateFolderModel">
+            <summary>
+            Model for updating an existing folder
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.UpdateFolderModel.ParentId">
+            <summary>
+            New parent of folder
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Asset.UpdateFolderModel.Name">
+            <summary>
+            New name of folder
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.Attribute">
+            <summary>
+            Represents an attribute in Struct PIM which can be attached to product, variant or category data models
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.Uid">
+            <summary>
+            Unique id of attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.Alias">
+            <summary>
+            Unique alias of attribute. Max length is 50 characters and can only consist of letters a-z/A-Z and numbers 0-9 (but cannot start with a number)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.BackofficeName">
+            <summary>
+            The name of the attribute displayed to the editor in the PIM backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.BackofficeDescription">
+            <summary>
+            The description of the attribute displayed to the editor in the PIM backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.Name">
+            <summary>
+            The localized name of the attribute usable for displaying the attribute name in ex. a webshop (Dictionary of ISO culturecode and localized value)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.Description">
+            <summary>
+            The localized description of the attribute usable for displaying a description for the attribute on ex. a webshop (Dictionary of ISO culturecode and localized value)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.AttributeGroupId">
+            <summary>
+            The id of the attribute group this attribute is placed within
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.AttributeScope">
+            <summary>
+            Unique id of the attribute scope this attribute is placed within
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.Localized">
+            <summary>
+            Indicates whether values of this attribute are localized
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.FallbackLanguage">
+            <summary>
+            Indicates a fallback language in case attribute is localized and no value is added to a specific language
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.DimensionUid">
+            <summary>
+            Unique id of Dimension to segment values of this attribute on
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.FallbackSegment">
+            <summary>
+            Indicates a fallback segment in case attribute is dimensioned and no value is added to a specific segment of that dimension
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.ReadOnly">
+            <summary>
+            Indicates whether this attribute is always readonly.
+            NOTE: Only applied when attribute is a sub attribute of a complex attribute.
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.Mandatory">
+            <summary>
+            Indicates whether this attribute is always mandatory.
+            NOTE: Only applied when attribute is a sub attribute of a complex attribute.
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.Unchangeable">
+            <summary>
+            Indicates whether this attribute cannot change its value, once it has a value assigned.
+            NOTE: Only applied when attribute is a sub attribute of a complex attribute.
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.AttributeType">
+            <summary>
+            Type of attribute
+            </summary>
+            <remarks>
+            Can be any of:
+                  * TextAttribute
+                  * NumberAttribute
+                  * BooleanAttribute
+                  * DateTimeAttribute
+                  * MediaAttribute
+                  * FixedListAttribute
+                  * ComplexAttribute
+                  * ListAttribute
+                  * CategoryReferenceAttribute
+                  * ProductReferenceAttribute
+                  * VariantReferenceAttribute
+                  * CollectionReferenceAttribute
+                  * AttributeReferenceAttribute
+            </remarks>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.Attribute.DisableRevisionLogging">
+            <summary>
+            Disable all revision logging for this attribute
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Attribute.Attribute.GetAttributeType">
+            <summary>
+            Gets the attribute type. ie. same as AttributeType property
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Attribute.Attribute.GetSubAttributeFromPath(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Get a sub attribute based on a uid path
+            </summary>
+            <param name="attributeUidPath">List of uids representing path to sub attribute</param>
+            <returns>Sub attribute</returns>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.AttributeGroup">
+            <summary>
+            Represents an attribute group used to organize attributes within
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeGroup.Id">
+            <summary>
+            Unique id of attribute group
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeGroup.Alias">
+            <summary>
+            Unique alias of attribute group
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeGroup.SortOrder">
+            <summary>
+            Sort order of the attribute group used to sort attribute groups between each other
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeGroup.Name">
+            <summary>
+            Localized name of attribute group used for displaying the attribute group on ex. a webshop (Dictionary of ISO culturecode and localized name)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.AttributeReference">
+            <summary>
+            Represents a reference to another attribute (or sub attribute) in the system
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Attribute.AttributeReference.#ctor">
+            <summary>
+            Create a new attribute reference
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReference.RootAttributeUid">
+            <summary>
+            Get the root uid of the referenced attribute (in case a sub attribute is referenced)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReference.AttributeUidPath">
+            <summary>
+            The path of the referenced attribute (will only be of length > 1 if a sub attribute is referenced)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.AttributeReferenceAttribute">
+            <summary>
+            Attribute used to create references to other attributes in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferenceAttribute.AllowMultipleValues">
+            <summary>
+            Indicates whether users can select more than one attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferenceAttribute.AllowedAttributeScopes">
+            <summary>
+            Attribute scopes from which attributes can be selected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferenceAttribute.AllowedAttributeTypes">
+            <summary>
+            The attribute types that is allowed to be referenced
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferenceAttribute.UnfoldComplexTypes">
+            <summary>
+            Indicates whether user can select sub attributes of complex attributes
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.AttributeReferences">
+            <summary>
+            Model holding references from other entities to an attribute
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Attribute.AttributeReferences.#ctor">
+            <summary>
+            Default constructor, initializes lists
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.AttributeUid">
+            <summary>
+            Id of the referenced attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.ReferencingCategories">
+            <summary>
+            List of categories referencing this attribute for product attribute templating
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.ReferencesOnCategoryAttributes">
+            <summary>
+            List of categories referencing this attribute from another attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.ReferencesOnProductAttributes">
+            <summary>
+            List of products referencing this attribute from another attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.ReferencesOnVariantAttributes">
+            <summary>
+            List of variants referencing this attribute from another attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.ReferencingGlobalListValues">
+            <summary>
+            List of global list values referencing this attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.ReferencingProductStructures">
+            <summary>
+            List of product structures referencing this attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeReferences.ReferencingVariationDefinitions">
+            <summary>
+            List of variation definitions referencing this attribute
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.AttributeScope">
+            <summary>
+            Use attribute scopes to segment your attributes into different scopes for different purposes
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeScope.Uid">
+            <summary>
+            Unique id of scope
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.AttributeScope.Alias">
+            <summary>
+            Unique alias of scope used to be easily identifiable by humans
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.BooleanAttribute">
+            <summary>
+            Checkbox attribute that can only obtain true of false values
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.CategoryReferenceAttribute">
+            <summary>
+            Attribute used to create references to categories in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.CategoryReferenceAttribute.AllowMultiple">
+            <summary>
+            Indicates whether multiple categories can be selected
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.CollectionReferenceAttribute">
+            <summary>
+            Attribute used to create references to collections in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.CollectionReferenceAttribute.AllowMultiple">
+            <summary>
+            Indicates whether multiple collections can be selected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.CollectionReferenceAttribute.AllowProductCollectionSelection">
+            <summary>
+            Allow selection of product collections
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.CollectionReferenceAttribute.AllowVariantCollectionSelection">
+            <summary>
+            Allow selection of variant collections
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.ComplexAttribute">
+            <summary>
+            Attribute used to wrap one or more sub attributes
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ComplexAttribute.SubAttributes">
+            <summary>
+            Sub attributes wrapped in this complex attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ComplexAttribute.RenderValuesForAttributeFieldUids">
+            <summary>
+            Uids of sub attributes to use when rendering an aggregate value for this complex attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ComplexAttribute.RenderValuesForBackofficeAttributeFieldUids">
+            <summary>
+            Uids of sub attributes to use when rendering an aggregate value for this complex attribute to show in the backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ComplexAttribute.DefaultListViewAttributeFieldUids">
+            <summary>
+            Uid paths of sub attributes to show by default in the list view interface of the backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ComplexAttribute.RenderedValueSeparator">
+            <summary>
+            Separator to use between sub attribute values when rendering an aggregate value for this complex attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ComplexAttribute.RenderedValueInBackofficeSeparator">
+            <summary>
+            Separator to use between sub attribute values when rendering an aggregate value for this complex attribute to show in the backoffice
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Attribute.ComplexAttribute.GetSubAttributeFromPath(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Get a sub attribute based on the uid path
+            </summary>
+            <param name="attributeUidPath">uid path for the sub attribute</param>
+            <returns></returns>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.DateTimeAttribute">
+            <summary>
+            Attribute used to hold date time values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.DateTimeAttribute.ShowTime">
+            <summary>
+            Indicate whether it is possible to select a time of day. If false, only a date can be selected
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.FixedListAttribute">
+            <summary>
+            Attribute used to create references to global list values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.FixedListAttribute.GlobalListId">
+            <summary>
+            Id of global list to select values from
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.FixedListAttribute.AllowMultipleValues">
+            <summary>
+            Indicates whether multiple global list values can be selected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.FixedListAttribute.EnableTableView">
+            <summary>
+            Show selected global list values in a table instead of default select input field
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.FixedListAttribute.ReferencedAttribute">
+            <summary>
+            The definition of the attribute defining the referenced global list (Readonly)
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Attribute.FixedListAttribute.GetSubAttributeFromPath(System.Collections.Generic.IEnumerable{System.Guid})">
+            <summary>
+            Get a sub attribute based on a uid path
+            </summary>
+            <param name="attributeUidPath">List of uids representing path to sub attribute</param>
+            <returns>Sub attribute</returns>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.ListAttribute">
+            <summary>
+            Attribute used to hold a number of rows each with its own data defined by an attribute template
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ListAttribute.Template">
+            <summary>
+            Attribute template for each row. Each row in the list will hold a data model defined by the attribute template
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ListAttribute.EnableTableView">
+            <summary>
+            When enabled, rows are shown in searchable table instead of individual inline rows
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.MediaAttribute">
+            <summary>
+            Attribute used to hold references to media items
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.MediaAttribute.AllowMultiselect">
+            <summary>
+            Indicate whether multiple medias can be selected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.MediaAttribute.AllowedSelectionTypes">
+            <summary>
+            The media types that can be selected
+            </summary>
+            <remarks>
+            Types are:
+                  * File
+                  * NumberAttribute
+                  * Folder
+                  * Image
+            </remarks>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.NumberAttribute">
+            <summary>
+            Attribute used to hold a number value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.NumberAttribute.NumberOfDecimals">
+            <summary>
+            Max number of decimals to use for this number
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.NumberAttribute.Unit">
+            <summary>
+            Fixed unit for all values of this attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.NumberAttribute.RegEx">
+            <summary>
+            RegEx validation to run when users enters data for this attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.NumberAttribute.RegExDescription">
+            <summary>
+            Error message to show to users when RegEx does not match
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.ProductReferenceAttribute">
+            <summary>
+            Attribute used to create references to products in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ProductReferenceAttribute.AllowMultiple">
+            <summary>
+            Indicates whether multiple products can be selected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.ProductReferenceAttribute.LimitToProductStructures">
+            <summary>
+            The product structures from which products can be selected. Leave empty to allow selection of products from all product structures
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.TextAttribute">
+            <summary>
+            Attribute used to hold text value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.UseMultiRowInput">
+            <summary>
+            Show input as a text area instead of a single line input
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.InputHeight">
+            <summary>
+            The height of the text area in pixels, if UseMultiRowInput is set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.UseRichText">
+            <summary>
+            Use Rich Text Editor if  UseMultiRowInput is set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.RichTextToolbarOptions">
+            <summary>
+            Available toolbar options on Rich Text Editor, if UseRichText is set. Available options are:
+            <list>
+            <item>code</item>
+            <item>removeformat</item>
+            <item>undo</item>
+            <item>redo</item>
+            <item>cut</item>
+            <item>copy</item>
+            <item>styleselect</item>
+            <item>bold</item>
+            <item>italic</item>
+            <item>underline</item>
+            <item>strikethrough</item>
+            <item>alignleft</item>
+            <item>alignright</item>
+            <item>alignjustify</item>
+            <item>bullist</item>
+            <item>numlist</item>
+            <item>outdent</item>
+            <item>indent</item>
+            <item>link</item>
+            <item>unlink</item>
+            <item>anchor</item>
+            <item>table</item>
+            <item>hr</item>
+            <item>supscript</item>
+            <item>superscript</item>
+            <item>charmap</item>
+            </list>
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.RegEx">
+            <summary>
+            RegEx validation to run when users enters data for this attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.RegExDescription">
+            <summary>
+            Error message to show to users when RegEx does not match
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.Unit">
+            <summary>
+            Fixed unit for value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.ShowCharacterCount">
+            <summary>
+            Show number of characters currently used
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.TextAttribute.MaxLength">
+            <summary>
+            Max character length of attribute value
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Attribute.VariantReferenceAttribute">
+            <summary>
+            Variant reference attribute used to reference variants in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.VariantReferenceAttribute.AllowMultiple">
+            <summary>
+            Indicates whether multiple variants can be selected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.VariantReferenceAttribute.OnlyChildren">
+            <summary>
+            When set, only variants of the product, to which this attribute is added, can be selected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Attribute.VariantReferenceAttribute.LimitToProductStructures">
+            <summary>
+            The product structures from which variants can be selected. Leave empty to allow selection of variants from all product structures
+            Note: Will not be applied if OnlyChildren is true
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Browse.BrowseCategoriesResultSet">
+            <summary>
+            Browse categories result set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoriesResultSet.Page">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoriesResultSet.TotalPages">
+            <summary>
+            Total pages
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoriesResultSet.Categories">
+            <summary>
+            Category results
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Browse.BrowseCategoryResult">
+            <summary>
+            Browse category result values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoryResult.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoryResult.ParentId">
+            <summary>
+            Parent Id
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoryResult.Created">
+            <summary>
+            Created
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoryResult.LastModified">
+            <summary>
+            Last modified
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseCategoryResult.InternalName">
+            <summary>
+            Internal name
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Browse.BrowseProductResult">
+            <summary>
+            Browse product result
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductResult.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductResult.Created">
+            <summary>
+            Created
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductResult.LastModified">
+            <summary>
+            Last modified
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductResult.InternalName">
+            <summary>
+            Internal name
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductResult.Categories">
+            <summary>
+            Categories
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductResult.VariantDefiningValues">
+            <summary>
+            Variant defining values
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Browse.BrowseProductsResultSet">
+            <summary>
+            Browse products result set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductsResultSet.Page">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductsResultSet.TotalPages">
+            <summary>
+            Total pages
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseProductsResultSet.Products">
+            <summary>
+            Product results
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Browse.BrowseVariantResult">
+            <summary>
+            Browse variant result
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantResult.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantResult.ProductId">
+            <summary>
+            Product Id
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantResult.Created">
+            <summary>
+            Created
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantResult.LastModified">
+            <summary>
+            Last modified
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantResult.InternalName">
+            <summary>
+            Internal name
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Browse.BrowseVariantsResultSet">
+            <summary>
+            Browse variants result set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantsResultSet.Page">
+            <summary>
+            Page number
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantsResultSet.TotalPages">
+            <summary>
+            Total pages
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Browse.BrowseVariantsResultSet.Variants">
+            <summary>
+            Variant results
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.AttributeAttachment">
+            <summary>
+            Represents an attribute connection to a category in the master catalogue
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.AttributeAttachment.AttributeUid">
+            <summary>
+            Uid of attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.AttributeAttachment.CategoryId">
+            <summary>
+            Id of category to which the attribute is connected
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.AttributeAttachment.Owner">
+            <summary>
+            Id of the category at which this connection originates (will be different from category id if this attachment is inherited from a higher level category)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.AttributeAttachment.EditableOnEntities">
+            <summary>
+            Entities the attribute id editable on
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CatalogueModel">
+            <summary>
+            Represents a catalogue in the PIM system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CatalogueModel.Uid">
+            <summary>
+            Unique id of catalogue
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CatalogueModel.Alias">
+            <summary>
+            Unique human readable alias for the catalogue
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CatalogueModel.Label">
+            <summary>
+            Label of catalogue displayed in the backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CatalogueModel.IsMaster">
+            <summary>
+            Indicates whether this catalogue is the master catalogue (only one master catalogue can exist in the system)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CatalogueModel.SortOrder">
+            <summary>
+            Sort order of the catalogue compared to other catalogues
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CatalogueModel.IdentifierDefinitions">
+            <summary>
+            Defines identifier setups used to create maps between eg. a category number in an external system and the internal id of a category of this catalogue in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CatalogueModel.Configuration">
+            <summary>
+            The configuration of tabs, sections and properties for categories in this catalogue
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryConfigurationModel">
+            <summary>
+            The catalogue configuration defines the tabs, sections and properties available on a category as well as the wizard used for creating new categories.
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryConfigurationModel.NameConfiguration">
+            <summary>
+            Pattern defining how names shall be generated for categories (names are shown in tree view and when a reference to the item is shown in backoffice)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryConfigurationModel.CreateWizard">
+            <summary>
+            The step wizard presented to users when creating a new category using this Category configuration [Optional]
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryConfigurationModel.Tabs">
+            <summary>
+            The tabs that shall be shown on categories using this category configuration in the backoffice
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoriesResultSet">
+            <summary>
+            Result set of categories from a category query
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoriesResultSet.Categories">
+            <summary>
+            List of categories in result set
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryAttributeValuesModel">
+            <summary>
+            Category attribute values container
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryAttributeValuesModel.CategoryId">
+            <summary>
+            Id of category
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryAttributeValuesModel`1">
+            <summary>
+            Category attribute values container
+            </summary>
+            <typeparam name="T">Class defining the object representation of the attribute values</typeparam>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryAttributeValuesModel`1.CategoryId">
+            <summary>
+            Id of category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryAttributeValuesModel`1.Values">
+            <summary>
+            The value model defining the object representation of the attribute values for this category
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryModel">
+            <summary>
+            Defines general information on a category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.Id">
+            <summary>
+            Id of category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.ParentId">
+            <summary>
+            Id of category's parent category. Null, if this category is placed in the root of its catalogue
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.SortOrder">
+            <summary>
+            Sortorder of the category compared to other categories at the same level in the catalogue
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.CatalogueUid">
+            <summary>
+            The unique id of the catalogue, this category resides in
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.Created">
+            <summary>
+            Timestamp of the creation of category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.CreatedBy">
+            <summary>
+            Username of user who created this category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.LastModified">
+            <summary>
+            Timestamp of last modification of category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.LastModifiedBy">
+            <summary>
+            Username of user who did the last modification
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.HasChildren">
+            <summary>
+            Indicates whether this category has any sub categories
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryModel.Name">
+            <summary>
+            Display name of category (Dictionary of ISO culture code and name)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryProductsModel">
+            <summary>
+            Wrapper for product children batch query
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryProductsModel.CategoryIds">
+            <summary>
+            Category ids to request products for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryProductsModel.IncludeArchived">
+            <summary>
+            Indicate whether archibed products shall also be included
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryReferences">
+            <summary>
+            Model holding references from other entities to a category
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Catalogue.CategoryReferences.#ctor">
+            <summary>
+            Default constructor, initializes lists
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryReferences.CategoryId">
+            <summary>
+            Id of the referenced category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryReferences.ReferencingCategories">
+            <summary>
+            List of categories referencing this category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryReferences.ReferencingProducts">
+            <summary>
+            List of products referencing this category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryReferences.ReferencingVariants">
+            <summary>
+            List of variants referencing this category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryReferences.ReferencingGlobalListValues">
+            <summary>
+            List of global list values referencing this category
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryValueRequestModel">
+            <summary>
+            Define which categories to fetch data for and what data to fetch
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryValueRequestModel.CategoryIds">
+            <summary>
+            Ids of categories to return
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel">
+            <summary>
+            Model for creating a new category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel.CatalogueUid">
+            <summary>
+            Uid of catalogue to add category to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel.ParentId">
+            <summary>
+            Id of parent id to place category underneath (set as null, of category shall be at root level of catalogue)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel.SortOrder">
+            <summary>
+            Sort order of category compared to other categories at the same level i the catalogue
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel`1">
+            <summary>
+            Model for creating a new category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel`1.CatalogueUid">
+            <summary>
+            Uid of catalogue to add category to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel`1.ParentId">
+            <summary>
+            Id of parent id to place category underneath (set as null, of category shall be at root level of catalogue)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel`1.SortOrder">
+            <summary>
+            Sort order of category compared to other categories at the same level i the catalogue
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CreateCategoryModel`1.Values">
+            <summary>
+            The value model defining the object representation of the attribute values for this category
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.CategoryMoveModel">
+            <summary>
+            Model to represent move operation of category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryMoveModel.ParentId">
+            <summary>
+            New parent id of category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.CategoryMoveModel.CatalogueUid">
+            <summary>
+            New catalogue uid of category
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.UpdateCategoryModel">
+            <summary>
+            Model representing a category update
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.UpdateCategoryModel.SortOrder">
+            <summary>
+            Set to update sort order of category compared to other categories at the same level in the catalogue (set as null if you do not want to update this)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.UpdateCategoryModel.MoveCommand">
+            <summary>
+            Set to update the categorys placement in a catalogue (set as null if you do not want to update this)
+            </summary>
+            <remarks>
+            #Available from 3.8.0
+            </remarks>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Catalogue.UpdateCategoryModel`1">
+            <summary>
+            Model representing a category update
+            </summary>
+            <typeparam name="T">Type of attribute value model</typeparam>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.UpdateCategoryModel`1.SortOrder">
+            <summary>
+            Set to update sort order of category compared to other categories at the same level in the catalogue (set as null if you do not want to update this)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.UpdateCategoryModel`1.MoveModel">
+            <summary>
+            Set to update the categorys placement in a catalogue (set as null if you do not want to update this)
+            </summary>
+            <remarks>
+            #Available from 3.8.0
+            </remarks>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Catalogue.UpdateCategoryModel`1.Values">
+            <summary>
+            The value model defining the object representation of the attribute values for this category (set as null if you do not want to update any attribute values)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Collection.Collection">
+            <summary>
+            Represents a dynamic group of products or variants based on a query
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.Collection.Uid">
+            <summary>
+            Unique id of collection
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.Collection.Alias">
+            <summary>
+            Unique human readable alias of collection
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.Collection.FolderUid">
+            <summary>
+            Folder in which collection is places (null of collection is placed at root level)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.Collection.QuerySetup">
+            <summary>
+            Query defining the products or variants that are part of this collection
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Collection.CollectionReferences">
+            <summary>
+            Model holding references from other entities to a collection
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Collection.CollectionReferences.#ctor">
+            <summary>
+            Default constructor, initializes lists
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.CollectionReferences.CollectionUid">
+            <summary>
+            Uid of the referenced collection
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.CollectionReferences.ReferencingCategories">
+            <summary>
+            List of categories referencing this collection
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.CollectionReferences.ReferencingProducts">
+            <summary>
+            List of products referencing this collection
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.CollectionReferences.ReferencingVariants">
+            <summary>
+            List of variants referencing this collection
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.CollectionReferences.ReferencingGlobalListValues">
+            <summary>
+            List of global list values referencing this collection
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Collection.QueryContainer">
+            <summary>
+            Definition of query for products or variants
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.QueryContainer.EntityType">
+            <summary>
+            The entity type to query for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Collection.QueryContainer.Query">
+            <summary>
+            Definition of the entity query, which can be BooleanQueryModel or SimpleQueryModel
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.IdentifierDefinition">
+            <summary>
+            An identifier definition defines how to create a map between certain attribute values and the internal id of the item (product, variant or category)
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.DataConfiguration.IdentifierDefinition.#ctor">
+            <summary>
+            Default constructur of identifier definition
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.IdentifierDefinition.Uid">
+            <summary>
+            Unique id of identifier definition
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.IdentifierDefinition.Alias">
+            <summary>
+            Unqique human readable identifier of the definition
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.IdentifierDefinition.IdentifierPattern">
+            <summary>
+            Pattern defining how to generate identifier string from values of the selected attributes (ex. {0} - {1} to render the values of two selected attributes in IdentifierAttributes with a - between them)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.IdentifierDefinition.IdentifierAttributes">
+            <summary>
+            Attributes for which values should be used for generating the identifier string (ex. uid of attribute for Model number and uid of attribute for SKU)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.NameConfiguration">
+            <summary>
+            Definition on how to generate names for items
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.NameConfiguration.NamePattern">
+            <summary>
+            Pattern defining how attribute values shall be concatenated to form a name. Ex. {0} - {1}
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.NameConfiguration.NameAttributes">
+            <summary>
+            Uids of attributes to use in rendering. Number of attributes must match number of referenced attributes in NamePattern
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.PropertySetup">
+            <summary>
+            Abstract representation of a property. Available implementations (Type's) are:
+                  * IdSetup
+                  * VariationDefinitionSetup
+                  * AttributeSetup
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.DataConfiguration.PropertySetup.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.PropertySetup.Uid">
+            <summary>
+            Unique id of property
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.PropertySetup.ViewPermission">
+            <summary>
+            Permission required to view property
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.PropertySetup.SavePermission">
+            <summary>
+            Permission required to edit property
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.PropertySetup.Type">
+            <summary>
+            The type of property defining the actual implementation type of the abstract Property
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.IdSetup">
+            <summary>
+            ID property showing the internal id of the item
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.CreatedSetup">
+            <summary>
+            Created timestamp property showing the exact creation timestamp of the item
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.LastModifiedSetup">
+            <summary>
+            Last modified timestamp property showing the exact timestamp of the latest modification of the item
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.PublicationPreviewSetup">
+            <summary>
+            Preview of publication for item
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.PublicationPreviewSetup.Width">
+            <summary>
+            Widht of the preview property
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.VariationDefinitionSetup">
+            <summary>
+            Variation definition selector property defines a property that allows users to select the variation definition to use for a product from a dropdown (can only be set on product configuration)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.VariationDefinitionSetup.DisplayName">
+            <summary>
+            Name to show for the property in the backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.VariationDefinitionSetup.DisplayDescription">
+            <summary>
+            Description to show for the property in the backoffice
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.AttributeSetup">
+            <summary>
+            Defines an attribute connection to a configuration, allowing users to set data for an attribute on the product, variant or category using the configuration this attribute setup is added to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.AttributeSetup.AttributeUid">
+            <summary>
+            Uid of attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.AttributeSetup.ReadOnly">
+            <summary>
+            Defines if the attribute value is read only
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.AttributeSetup.Mandatory">
+            <summary>
+            Defines if the attribute must have a value before the user can save the tab
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.AttributeSetup.Unchangeable">
+            <summary>
+            Defines if the attribute value cannot change, once it has gotten a value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.AttributeSetup.Inherits">
+            <summary>
+            Can relevant to variant configuration. If the same attribute is connected to the product configuration and variant configuration of a product structure, setting Inherits to true
+            will make the value set on the product inherit to its variants by default.
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.PropertySetupConverter">
+            <summary>
+            Converts JSON representations of properties to concrete property implementation objects
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.SectionSetup">
+            <summary>
+            Abstract representation of a section. Available implementations (Type's) are:
+                  * CategoryAttributesSetup
+                  * DynamicSectionSetup
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.DataConfiguration.SectionSetup.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.SectionSetup.Uid">
+            <summary>
+            Unique id of section
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.SectionSetup.ViewPermission">
+            <summary>
+            Permission required to view section
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.SectionSetup.SavePermission">
+            <summary>
+            Permission required to edit data in this section
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.SectionSetup.Type">
+            <summary>
+            The type of section defining the actual implementation type of the abstract Section
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.CategoryAttributesSetup">
+            <summary>
+            Section which shows input fields for all attributes inherited from the products primary category
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.DynamicSectionSetup">
+            <summary>
+            Generic section that allows setting up specific properties to show in the section
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DynamicSectionSetup.Headline">
+            <summary>
+            Headline of section
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DynamicSectionSetup.Description">
+            <summary>
+            Description to show on section
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DynamicSectionSetup.Properties">
+            <summary>
+            Properties shown in section
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.SectionSetupConverter">
+            <summary>
+            Converts JSON representations of sections to concrete section implementation objects
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.TabSetup">
+            <summary>
+            Abstract representation of a Tab. Available implementations (Type's) are:
+                  * VariantsTabSetup
+                  * AttributesOnCategoryTabSetup
+                  * ClassificationsTabSetup
+                  * DynamicTabSetup
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.DataConfiguration.TabSetup.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.TabSetup.Uid">
+            <summary>
+            Unique id of tab
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.TabSetup.ViewPermission">
+            <summary>
+            Uid of permision required to view this tab
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.TabSetup.SavePermission">
+            <summary>
+            Uid of permission required to edit data on this tab
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.TabSetup.Type">
+            <summary>
+            The type of tab defining the actual implementation type of the abstract Tab
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.VariantsTabSetup">
+            <summary>
+            Variants tab displays all variants of a product and can only be added to product configuration
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.AttributesOnCategoryTabSetup">
+            <summary>
+            Tab that allows setting up attributes on a category that shall be available to products in this category or its descendants (Can only be added to master catalogue).
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.ClassificationsTabSetup">
+            <summary>
+            Shows a products classifications in different catalogues of the system (can only be added to product configuration)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.DynamicTabSetup">
+            <summary>
+            Generic tab that allows setting up specific sections to show on the tab
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DynamicTabSetup.Label">
+            <summary>
+            The headline this tab shall be presented with in the backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DynamicTabSetup.Sections">
+            <summary>
+            The sections shown on this tab in the backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DynamicTabSetup.ShowSidebar">
+            <summary>
+            Shows product status sidebar in backoffice
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.TabSetupConverter">
+            <summary>
+            Converts JSON representations of tabs to concrete Tab implementation objects
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.WizardSetup">
+            <summary>
+            Defines a step wizard that allows a step wizard presentation for data fulfillment
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.DataConfiguration.WizardSetup.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardSetup.Uid">
+            <summary>
+            Unique id of wizard setup
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardSetup.Steps">
+            <summary>
+            The steps that are part of this wizard
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.WizardStepSetup">
+            <summary>
+            Abstract representation of a wizard step. Available implementations (Type's) are:
+                  * DynamicWizardStepSetup
+                  * ClassificationWizardStepSetup
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.DataConfiguration.WizardStepSetup.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardStepSetup.Uid">
+            <summary>
+            Unique id of wizard step
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardStepSetup.Headline">
+            <summary>
+            Headline for wizard step
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardStepSetup.Description">
+            <summary>
+            Description for wizard step
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardStepSetup.Type">
+            <summary>
+            The type of wizard step defining the actual implementation type of the abstract WizardStep
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.DynamicWizardStepSetup">
+            <summary>
+            Dynamic wizard step allows setting properties that shall be shown in this step
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DynamicWizardStepSetup.Properties">
+            <summary>
+            Properties that shall be shown on this wizard step
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.ClassificationWizardStepSetup">
+            <summary>
+            Classification step allowing users to classify products as part of a wizard
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.WizardPropertySetup">
+            <summary>
+            Abstract representation of a wizard property. Available implementations (Type's) are:
+                  * AttributeWizardPropertySetup
+                  * VariationDefinitionWizardPropertySetup
+                  * DefiningAttributesWizardPropertySetup
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.DataConfiguration.WizardPropertySetup.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardPropertySetup.Uid">
+            <summary>
+            Unique id of wizard property
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.WizardPropertySetup.Type">
+            <summary>
+            The type of wizard property defining the actual implementation type of the abstract WizardStep
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.AttributeWizardPropertySetup">
+            <summary>
+            Attribute property reference, referencing a property that shall be shown in a wizard step
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.AttributeWizardPropertySetup.PropertyUid">
+            <summary>
+            Reference to property uid on configuration defining the attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.AttributeWizardPropertySetup.Mandatory">
+            <summary>
+            Defines if this property must be fulfilled for the user to be able to go to next step in the wizard
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.DefiningAttributesWizardPropertySetup">
+            <summary>
+            Defining attributes property used to show defining attributes for a variant in wizard
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.DefiningAttributesWizardPropertySetup.Mandatory">
+            <summary>
+            Defines if the defining attributes are mandatory in the step they are shown
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.VariationDefinitionWizardPropertySetup">
+            <summary>
+            Variation definition selector (can only be set on products)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.VariationDefinitionWizardPropertySetup.DisplayName">
+            <summary>
+            Add an optional display name to show for the property in the backoffice wizard
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.VariationDefinitionWizardPropertySetup.DisplayDescription">
+            <summary>
+            Add an optional description to show for the property in the backoffice wizard
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.DataConfiguration.VariationDefinitionWizardPropertySetup.Mandatory">
+            <summary>
+            Defines if this property must be fulfilled for the user to be able to go to next step in the wizard
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.EntityType">
+            <summary>
+            Entity type reference
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.DataConfiguration.EntityType.Category">
+            <summary>
+            Category reference
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.DataConfiguration.EntityType.Product">
+            <summary>
+            Product reference
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.DataConfiguration.EntityType.Variant">
+            <summary>
+            Variant reference
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.WizardStepSetupConverter">
+            <summary>
+            Converts JSON representations of wizard steps to concrete Wizard step implementation objects
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.DataConfiguration.WizardPropertySetupConverter">
+            <summary>
+            Converts JSON representations of wizard steps to concrete Wizard property implementation objects
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.EnrichmentInsight.ConfigurationInsightSetup">
+            <summary>
+            Model defining required field for a configuration (being either a catalogue uid or a product structure uid)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.ConfigurationInsightSetup.ConfigurationUid">
+            <summary>
+            Uid of configuration these required data accounts for (if entity type of insights setup is category, 
+            this will be the uid of a catalogue. For variants and products this should hold the uid of a product structure)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.ConfigurationInsightSetup.CategoryId">
+            <summary>
+            Id of selected category which is chosen for the insight
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.ConfigurationInsightSetup.RequiredData">
+            <summary>
+            List of data references that are required for this insight to be 100% for entities using the configuration in question
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.EnrichmentInsight.DetailedInsightDataReference">
+            <summary>
+            Model representing detailed information on an insights data reference
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.DetailedInsightDataReference.Name">
+            <summary>
+            Name of data reference
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.EnrichmentInsight.EnrichmentInsightSetup">
+            <summary>
+            Model defining setup of an enrichment insight
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EnrichmentInsightSetup.Uid">
+            <summary>
+            Unique id of enrichment insight setup
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EnrichmentInsightSetup.EntityType">
+            <summary>
+            Entity type this insight is to be calculated for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EnrichmentInsightSetup.Alias">
+            <summary>
+            Unique alias of this insight setup
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EnrichmentInsightSetup.Label">
+            <summary>
+            Presented name of this enrichment insight setup
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EnrichmentInsightSetup.Setup">
+            <summary>
+            Setup of required fields for each configuration available to this insight setup (One for each product structure or each catalogue depnding on the entity type)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.EnrichmentInsight.EntityEnrichmentInsight">
+            <summary>
+            Model representing an entity's enrichment insight
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EntityEnrichmentInsight.EnrichmentInsightSetupUid">
+            <summary>
+            Uid of enrichment insight
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EntityEnrichmentInsight.EntityId">
+            <summary>
+            Id of entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EntityEnrichmentInsight.Completeness">
+            <summary>
+            Completeness in percentage (0 - 100). Is null, if ignored is true
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EntityEnrichmentInsight.MissingData">
+            <summary>
+            List of missing data for this entity to reach 100% completeness for this enrichment insight
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.EntityEnrichmentInsight.Ignored">
+            <summary>
+            Indicates whether the completeness is ignored for this entity and this enrichment insight
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.EnrichmentInsight.EntityType">
+            <summary>
+            Enum representing each supported entity type in enrichment insights engine
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.EnrichmentInsight.EntityType.Category">
+            <summary>
+            Category
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.EnrichmentInsight.EntityType.Product">
+            <summary>
+            Product
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.EnrichmentInsight.EntityType.Variant">
+            <summary>
+            Variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.EnrichmentInsight.InsightDataReference">
+            <summary>
+            Model representing an insights data reference
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.InsightDataReference.Type">
+            <summary>
+            Type of data reference
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.EnrichmentInsight.InsightDataReference.DataReference">
+            <summary>
+            The data reference itself
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.ExcelExportSettings">
+            <summary>
+            Settings to build an Excel Export of selected fields
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelExportSettings.Fields">
+            <summary>
+            Fields to export and configuration of each
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelExportSettings.TemplateInfo">
+            <summary>
+            If export should print into a specific Excel template stored on the server
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.ExcelListAttributeExportSettings">
+            <summary>
+            Settings for exporting data in a list attribute
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelListAttributeExportSettings.ListAttributeUid">
+            <summary>
+            The uid of the list attribute to export
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelListAttributeExportSettings.SelectedFields">
+            <summary>
+            The sub fields of the list attribute to export
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelListAttributeExportSettings.LanguageId">
+            <summary>
+            The language to use when exporting aggregated data such as referenced global list data
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelListAttributeExportSettings.SegmentUid">
+            <summary>
+            The segment to use when exporting aggregated data such as referenced global list data
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelListAttributeExportSettings.Identifier">
+            <summary>
+            The identifier to use for the entity being exported ie. internalid og some idenfier configured in PIM
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.ExcelTemplateExportSettings">
+            <summary>
+            Settings used for exporting using a file mapping
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelTemplateExportSettings.FileMappingUid">
+            <summary>
+            The uid of the file mapping to use
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.ExcelTemplateInfo">
+            <summary>
+            Manage custom Excel spreadsheet configuration
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelTemplateInfo.StartRowNumber">
+            <summary>
+            First row number to start printing export from (default is 2)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelTemplateInfo.FilePath">
+            <summary>
+            Path of file with excel template to export into instead of exporting into empty Excel spreadsheet
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelTemplateInfo.FileName">
+            <summary>
+            Filename to give export file
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExcelTemplateInfo.WorksheetNumber">
+            <summary>
+            Worksheet number to export into
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.ExportModel">
+            <summary>
+            Model defining export to build
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportModel.EntityType">
+            <summary>
+            The entity type to export data for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportModel.EntityIds">
+            <summary>
+            The ids to export data for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportModel.ExportSettings">
+            <summary>
+            Settings to use for the export
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.ExportResult">
+            <summary>
+            Result of an export
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportResult.FileBytes">
+            <summary>
+            The actual file containing the exported data
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportResult.FileName">
+            <summary>
+            Name of the file
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportResult.FileExtension">
+            <summary>
+            Extension of the file
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportResult.MimeType">
+            <summary>
+            Mimetype of the file
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.ExportSettings">
+            <summary>
+            Settings for an export
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Exports.ExportSettings.GetExportSettingsType">
+            <summary>
+            Gets the export type. ie. same as AttributeType property
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.ExportSettings.ExportSettingsType">
+            <summary>
+            Type of export settings
+            </summary>
+            <remarks>
+            Can be any of:
+                  * ExcelExportSettings
+                  * ExcelListAttributeExportSettings
+                  * ExcelTemplateExportSettings
+            </remarks>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Exports.FieldMapping">
+            <summary>
+            Defines the mapping of a field in PIM to a column in an export
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.FieldMapping.FieldUid">
+            <summary>
+            Id of field to export
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.FieldMapping.ColumnName">
+            <summary>
+            Column headline
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.FieldMapping.UseFixedValue">
+            <summary>
+            True to export a fixed value for this column
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Exports.FieldMapping.FixedValue">
+            <summary>
+            The fixed value to print, if UseFixedValue is set
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.GlobalList.GlobalList">
+            <summary>
+            Global list represents a global collection of reusable objects
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.Id">
+            <summary>
+            Id of global list (readonly)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.Uid">
+            <summary>
+            Unique id of global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.Attribute">
+            <summary>
+            Attribute defining the data model for values of the global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.ViewRequiresPermission">
+            <summary>
+            Indicates whether a special permission is required to view the global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.ViewPermission">
+            <summary>
+            Permission required to view the global list, if ViewRequiresPermission is set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.ManageRequiresPermission">
+            <summary>
+            Indicates whether a special permission is required in order to create or update values in the global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.ManagePermission">
+            <summary>
+            Permission required to create or update values in the global list, if ManageRequiresPermission is set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.FolderUid">
+            <summary>
+            Uid of folder to place global list in
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalList.RequiresSorting">
+            <summary>
+            Defines if values on a global list values should be sorted on creation
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.GlobalList.GlobalListFolder">
+            <summary>
+            Folder holding global lists
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListFolder.Uid">
+            <summary>
+            Unique id of folder
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListFolder.Name">
+            <summary>
+            Presented name of folder in backoffice
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.GlobalList.GlobalListValue">
+            <summary>
+            Global list value object representing data on a specific object in a global list.
+            The data type of the value property differs depending on the underlying attribute on the global list of this value. 
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValue.Uid">
+            <summary>
+            Unique id of global list value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValue.SortOrder">
+            <summary>
+            Sort order of this value compared to other values in the same global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValue.Value">
+            <summary>
+            The value dynamic value model. The data type of this model depends on the Global list attribute setup.
+            If the global list attribute is a Text attribute, this value will be a string If it is a Number attribute,
+            this value will be a decimal and so on.
+            </summary>
+            <remarks>
+            The table below shows how different attributes translates to this value model.
+            
+              | **Attribute type**       | **data type**   |
+              | ------------------       | --------------- |
+              | **Text attribute**       | string          |
+              | **Number attribute**     | decimal         |
+              | **Boolean attribute**    | bool            |
+              | **Fixedlist attribute**  | value/value[] (depending on whether attribute allows selecting multiple global list values). The datatype of this value model depends on the underlying attribute for the global list of the refernced global list value(s)            |
+              | **Media attribute**      | string/string[] (depending on whether attribute allows selecting multiple medias)            |
+              | **Datetime attribute**   | DateTimeOffset            |
+              | **Category attribute**   | int/int[] (depending on whether attribute allows selecting multiple categories)            |
+              | **Product attribute**    | int/int[] (depending on whether attribute allows selecting multiple products)            |
+              | **Variant attribute**    | int/int[] (depending on whether attribute allows selecting multiple variants)            |
+              | **Collection attribute** | uuid/uuid[] (depending on whether attribute allows selecting multiple collections)            |
+              | **Attribute attribute**  | string/string[] (depending on whether attribute allows selecting multiple attributes)            |
+              | **Complex attribute**    | object (Each property of the object corresponds to each sub attribute of the complex attribute. The value of each property then corresponds to the data type of that sub attribute)            |
+              | **List attribute**       | value[] (Each value  in the array represents each row in the list. The model of each row corresponds to the datatype of the row template set up on the list attribute)            |
+            </remarks>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.GlobalList.GlobalListValue`1">
+            <summary>
+            Global list value object representing data on a specific object in a global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValue`1.Uid">
+            <summary>
+            Unique id of global list value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValue`1.SortOrder">
+            <summary>
+            Sort order of this value compared to other values in the same global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValue`1.Value">
+            <summary>
+            The typed value of the global list. The type should correspond to model of the global list attribute
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.GlobalList.GlobalListValueReferences">
+            <summary>
+            Model holding references from other entities to global list value
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.GlobalList.GlobalListValueReferences.#ctor">
+            <summary>
+            Default constructor, initializes lists
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueReferences.GlobalListValueUid">
+            <summary>
+            Uid of the referenced global list value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueReferences.ReferencingCategories">
+            <summary>
+            List of categories referencing this global list value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueReferences.ReferencingProducts">
+            <summary>
+            List of products referencing this global list value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueReferences.ReferencingVariants">
+            <summary>
+            List of variants referencing this global list value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueReferences.ReferencingGlobalListValues">
+            <summary>
+            List of other global list values referencing this global list value
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet">
+            <summary>
+            Resultset for requested global list values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet.Total">
+            <summary>
+            Total number of global list values in global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet.Remaining">
+            <summary>
+            Remaining values after the LastId in this result set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet.LastId">
+            <summary>
+            Last id of values in this resultset. Use as pointer to fetch next batch of values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet.GlobalListValues">
+            <summary>
+            The global list values in this resultset
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet`1">
+            <summary>
+            Resultset for requested global list values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet`1.Total">
+            <summary>
+            Total number of global list values in global list
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet`1.Remaining">
+            <summary>
+            Remaining values after the LastId in this result set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet`1.LastId">
+            <summary>
+            Last id of values in this resultset. Use as pointer to fetch next batch of values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.GlobalList.GlobalListValueResultSet`1.GlobalListValues">
+            <summary>
+            The global list values in this resultset
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.ProductStructure.ProductConfiguration">
+            <summary>
+            The product configuration defines the tabs, sections and properties available on a product as well as the wizard used for creating new products.
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductConfiguration.ThumbnailReference">
+            <summary>
+            Reference to a media attribute which holds the image that should be presented as thumbnail for the product.
+            Use Product_[attributeUid] to reference a media attribute on the Product configuration itself
+            Variant_[attributeUid] to reference a media attribute on the Product configuration of the Product structure and
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductConfiguration.NameConfiguration">
+            <summary>
+            Pattern defining how names shall be generated for products (names are shown in tree view and when a reference to the item is shown in backoffice)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductConfiguration.CreateWizard">
+            <summary>
+            The step wizard presented to users when creating a new product using this Product configuration [Optional]
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductConfiguration.Tabs">
+            <summary>
+            The tabs that shall be shown on products using this product configuration in the backoffice
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.ProductStructure.ProductStructure">
+            <summary>
+            Product structure is the model that defines the fields available on products and variants
+            as well as how these are presented in tabs and sections in the PIM backoffice
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.ProductStructure.ProductStructure.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.Uid">
+            <summary>
+            Unique id of product structure
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.Alias">
+            <summary>
+            Unique human readable alias of product structure
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.Label">
+            <summary>
+            Presented name of product structure in backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.HasVariants">
+            <summary>
+            Indicates whether products using this product structure can have variants. VariantConfiguration
+            is required when this is true
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.ProductConfiguration">
+            <summary>
+            The configuration of tabs, sections and properties for products using this configuration
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.VariantConfiguration">
+            <summary>
+            The configuration of tabs, sections and properties of variants using this configuration (only needed when HasVariants is true)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.VariationDefinitions">
+            <summary>
+            Defines different variant variations (eg. some products have variants of color/size, others of width/length, others again of just color and so on.)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.AlwaysOnDefiningAttributes">
+            <summary>
+            Set defining attributes that must always be available no matter if they are part of the variation definition for a variant or not
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.ProductIdentifierDefinitions">
+            <summary>
+            Defines identifier setups used to create maps between eg. a model number and the internal id of a product in the system
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.ProductStructure.VariantIdentifierDefinitions">
+            <summary>
+            Defines identifier setups used to create maps between eg. a SKU and the internal id of the variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.ProductStructure.VariantConfiguration">
+            <summary>
+            The variant configuration defines the tabs, sections and properties available on a variant as well as the wizard used for creating new variants.
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariantConfiguration.ThumbnailReference">
+            <summary>
+            Reference to a media attribute which holds the image that should be presented as thumbnail for the variant.
+            Use Product_[attributeUid] to reference a media attribute on the Product configuration of the Product structure and
+            Variant_[attributeUid] to reference a media attribute on the Variant configuration itself
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariantConfiguration.CreateWizard">
+            <summary>
+            The step wizard presented to users when creating a new variant using this Variant configuration [Optional]
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariantConfiguration.Tabs">
+            <summary>
+            The tabs that shall be shown on variants using this variant configuration in the backoffice
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.ProductStructure.VariationDefinition">
+            <summary>
+            Variation definition defines how variants of a product differ from each other - eg. what are the defining attributes (color, color and size, width and height etc.)
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.ProductStructure.VariationDefinition.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariationDefinition.Uid">
+            <summary>
+            Unique id of variation definition
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariationDefinition.Alias">
+            <summary>
+            Unique human readable identifier for variation definition
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariationDefinition.Name">
+            <summary>
+            Presented name of variation definition in backoffice
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariationDefinition.NameConfiguration">
+            <summary>
+            Pattern defining how names shall be generated for variants (names are shown in tree view and when a reference to the item is shown in backoffice)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariationDefinition.DefiningAttributes">
+            <summary>
+            Uid of the attributes which are defining for variants using this variation definition (eg. uid of color attribute, uids of color and size attribute etc.)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.ProductStructure.VariationDefinition.SortOrder">
+            <summary>
+            The presented sortorder of the variation definition in backoffice
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.AddProductClassificationsModel">
+            <summary>
+            Model for holding category ids and a primary category
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.AddProductClassificationsModel.CategoryIds">
+            <summary>
+            Ids of categories to add product to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.AddProductClassificationsModel.CategoryIdsSorted">
+            <summary>
+            Ids of categories to add product to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.AddProductClassificationsModel.Primary">
+            <summary>
+            Category to set as primary category. Leave empty, to make nochange to primary category
+            (if product does not currently have a primary category and this is null, the first category in CategoryIds will be set as primary category)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.CategoryIdSorted">
+            <summary>
+            Model for category to add product to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CategoryIdSorted.CategoryId">
+            <summary>
+            Id of category to add product to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CategoryIdSorted.SortOrder">
+            <summary>
+            The presented sortorder of the categories
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.BatchAddProductClassificationsModel">
+            <summary>
+            Model for adding classifications to a product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.BatchAddProductClassificationsModel.ProductId">
+            <summary>
+            Id of product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.BatchAddProductClassificationsModel.CategoryIds">
+            <summary>
+            Category ids to add products to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.BatchAddProductClassificationsModel.Primary">
+            <summary>
+            Category to set as primary category. Leave empty, to make nochange to primary category
+            (if product does not currently have a primary category and this is null, the first category in CategoryIds will be set as primary category)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.BatchUpdateProductModel">
+            <summary>
+            Update model for a product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.BatchUpdateProductModel.ProductId">
+            <summary>
+            Id of product to update
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.BatchUpdateProductModel.UpdateModel">
+            <summary>
+            Model containing updates to make on product (properties with null values are ignored and does not cause an update)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.BatchUpdateProductModel`1">
+            <summary>
+            Update model for a product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.BatchUpdateProductModel`1.ProductId">
+            <summary>
+            Id of product to update
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.BatchUpdateProductModel`1.UpdateModel">
+            <summary>
+            Model containing updates to make on product (properties with null values are ignored and does not cause an update)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.CreateProductModel">
+            <summary>
+            Model used to create a new product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel.ProductStructureUid">
+            <summary>
+            Product structure to use for product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel.VariationDefinitionUid">
+            <summary>
+            Variation definition to use for product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel.CategoryIds">
+            <summary>
+            Categories to place product in
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel.PrimaryCategoryId">
+            <summary>
+            The primary category to set for the product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.CreateProductModel`1">
+            <summary>
+            Model used to create a new product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel`1.ProductStructureUid">
+            <summary>
+            Product structure to use for product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel`1.VariationDefinitionUid">
+            <summary>
+            Variation definition to use for product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel`1.CategoryIds">
+            <summary>
+            Categories to place product in
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel`1.PrimaryCategoryId">
+            <summary>
+            The primary category to set for the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.CreateProductModel`1.Values">
+            <summary>
+            Object representation of attribute values to set on the product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.ProductAttributeValuesModel">
+            <summary>
+            Attribute values for a product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductAttributeValuesModel.ProductId">
+            <summary>
+            Id of product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.ProductAttributeValuesModel`1">
+            <summary>
+            Attribute values for a product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductAttributeValuesModel`1.ProductId">
+            <summary>
+            Id of product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductAttributeValuesModel`1.Values">
+            <summary>
+            The value model defining the object representation of the attribute values for this product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.ProductClassificationModel">
+            <summary>
+            Holds information on products placement in categories
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductClassificationModel.CategoryId">
+            <summary>
+            Id of category the product is placed in
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductClassificationModel.IsPrimary">
+            <summary>
+            Indication whether this classification is the primary classification for the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductClassificationModel.OwnerReference">
+            <summary>
+            A reference to where this classification comes from. If the classification is made in the PIM interface, this will be null.
+            When creating or updating classifications of products through API this can be set to any value. Thus, classifications made from the 
+            API can be distinguished from those made directly in the UI
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductClassificationModel.SortOrder">
+            <summary>
+            Sort order of the product in this category
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.ProductModel">
+            <summary>
+            Represents the root information always present on a product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.Id">
+            <summary>
+            Unique id of the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.Name">
+            <summary>
+            Display name of product (Dictionary of ISO culture code and name)
+            Note: Available from 3.7.0
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.Created">
+            <summary>
+            Timestamp of the product creation
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.CreatedBy">
+            <summary>
+            Username of the user who created the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.LastModified">
+            <summary>
+            Timestamp of the last product update
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.LastModifiedBy">
+            <summary>
+            Username of the user who made the last change to the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.VariationDefinitionUid">
+            <summary>
+            Variation definition reference. For more information, <see cref="T:Struct.PIM.Api.Models.ProductStructure.VariationDefinition"/> for more information
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.IsArchived">
+            <summary>
+            Indicates whether the product is archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.ArchiveReason">
+            <summary>
+            The uid of the archive reason selected when the product was archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductModel.ProductStructureUid">
+            <summary>
+            The uid of the product structure used for this product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.ProductReferences">
+            <summary>
+            Model holding references from other entities to a product
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Product.ProductReferences.#ctor">
+            <summary>
+            Default constructor, initializes lists
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductReferences.ProductId">
+            <summary>
+            Id of the referenced product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductReferences.ReferencingCategories">
+            <summary>
+            List of categories referencing this product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductReferences.ReferencingProducts">
+            <summary>
+            List of products referencing this product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductReferences.ReferencingVariants">
+            <summary>
+            List of variants referencing this product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductReferences.ReferencingGlobalListValues">
+            <summary>
+            List of global list values referencing this product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.ProductsResultSet">
+            <summary>
+            Result set of products from a product query
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductsResultSet.Products">
+            <summary>
+            List of products in result set
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.ProductValuesRequestModel">
+            <summary>
+            Define which categories to fetch data for and what data to fetch
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.ProductValuesRequestModel.ProductIds">
+            <summary>
+            Ids of products to return
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.RemoveClassificationsModel">
+            <summary>
+            Model for removing classifications for a product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.RemoveClassificationsModel.ProductId">
+            <summary>
+            Id to remove classifications from
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.RemoveClassificationsModel.CategoryIds">
+            <summary>
+            Categories to remove product from
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.UpdateProductModel">
+            <summary>
+            Update model containing the updates to make on a product. Note that properties with null values will be ignored and will not cause an update.
+            This means you should only set properties that shall be updated on the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel.ProductStructureUid">
+            <summary>
+            Product structure to set on product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel.VariationDefinitionUid">
+            <summary>
+            Variation definition to set on product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel.IsArchived">
+            <summary>
+            Indicate whether the product shall be archived or un-archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel.ArchiveReason">
+            <summary>
+            Reference to the archive reason when archiving product (if IsArchived is true)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel.Classifications">
+            <summary>
+            Categories to add the product to
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Product.UpdateProductModel`1">
+            <summary>
+            Update model containing the updates to make on a product. Note that properties with null values will be ignored and will not cause an update.
+            This means you should only set properties that shall be updated on the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel`1.ProductStructureUid">
+            <summary>
+            Product structure to set on product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel`1.VariationDefinitionUid">
+            <summary>
+            Variation definition to set on product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel`1.IsArchived">
+            <summary>
+            Indicate whether the product shall be archived or un-archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel`1.ArchiveReason">
+            <summary>
+            Reference to the archive reason when archiving product (if IsArchived is true)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel`1.Classifications">
+            <summary>
+            Categories to add the product to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Product.UpdateProductModel`1.Values">
+            <summary>
+            Object representation of attribute values to update on product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.EntityReferenceDetail">
+            <summary>
+            Model holding the attribute reference information for an entity reference
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.EntityReferenceDetail.EntityId">
+            <summary>
+            The id of the referencing entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.EntityReferenceDetail.AttributeUid">
+            <summary>
+            The attribute on the referencing entity that holds the reference
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.HasAttributeValues.Values">
+            <summary>
+            Dictionary of attribute alias and the corresponding attribute value as an object representation
+            </summary>
+            <remarks>
+            The table below shows how different attributes translates to this value model.
+            
+              | **Attribute type**       | **data type**   |
+              | ------------------       | --------------- |
+              | **Text attribute**       | string          |
+              | **Number attribute**     | decimal         |
+              | **Boolean attribute**    | bool            |
+              | **Fixedlist attribute**  | value/value[] (depending on whether attribute allows selecting multiple global list values). The datatype of this value model depends on the underlying attribute for the global list of the refernced global list value(s)            |
+              | **Media attribute**      | string/string[] (depending on whether attribute allows selecting multiple medias)            |
+              | **Datetime attribute**   | DateTimeOffset            |
+              | **Category attribute**   | int/int[] (depending on whether attribute allows selecting multiple categories)            |
+              | **Product attribute**    | int/int[] (depending on whether attribute allows selecting multiple products)            |
+              | **Variant attribute**    | int/int[] (depending on whether attribute allows selecting multiple variants)            |
+              | **Collection attribute** | uuid/uuid[] (depending on whether attribute allows selecting multiple collections)            |
+              | **Attribute attribute**  | string/string[] (depending on whether attribute allows selecting multiple attributes)            |
+              | **Complex attribute**    | object (Each property of the object corresponds to each sub attribute of the complex attribute. The value of each property then corresponds to the data type of that sub attribute)            |
+              | **List attribute**       | value[] (Each value  in the array represents each row in the list. The model of each row corresponds to the datatype of the row template set up on the list attribute)            |
+            </remarks>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.IdentifierBatchModel">
+            <summary>
+            Provide an identifier alias along with an array of identifiers to get the internal entity ids matching those identifiers
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.IdentifierBatchModel.IdentifierAlias">
+            <summary>
+            The alias of the identifier
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.IdentifierBatchModel.Identifiers">
+            <summary>
+            Array of identifiers to return internal ids for
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.JsonCreationConverter`1.TypeCache">
+            <summary>
+            Type cache for each generic type. NOT shared across generic classes
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.JsonCreationConverter`1.FallbackResolvers">
+            <summary>
+            This is also per-generic-type
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.JsonCreationConverter`1.CanWrite">
+            <summary>
+            this is very important, otherwise serialization breaks!
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.JsonCreationConverter`1.Create(System.Type,Newtonsoft.Json.Linq.JObject)">
+            <summary> 
+            Create an instance of objectType, based properties in the JSON object 
+            </summary> 
+            <param name="objectType">type of object expected</param> 
+            <param name="jObject">contents of JSON object that will be 
+            deserialized</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.JsonCreationConverter`1.RegisterType``1(System.String)">
+            <summary>
+            Allows you to register a type for deserialization.
+            The complicated typing is designed to only allow you to register classes that are valid.
+            </summary>
+            <typeparam name="TIn">Type to be deserialized into</typeparam>
+            <param name="nameOverride"> The typename you want to direct into your class </param>
+            <returns></returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.JsonCreationConverter`1.AddFallbackResolver``1(System.Func{System.String,System.Type})">
+            <summary>
+            Allows you to regiser a handler to handle unknown types to deserialize. If no value is found, must return null;
+            </summary>
+            <typeparam name="TIn">A type you expect to return. This parameter exsists to force you to have atleast one valid type
+            you are explicitly allowed to return a type.with no parameters</typeparam>
+            <param name="resolver">The resolver which returns the correct type to deserialize, resolved from name</param>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.LocalizedData`1">
+            <summary>
+            Model for holding localized data representations for attribute values
+            </summary>
+            <typeparam name="T">type of value that is localized ie. string, decimal etc.</typeparam>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.LocalizedData`1.CultureCode">
+            <summary>
+            ISO culture code of the value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.LocalizedData`1.Data">
+            <summary>
+            The localized value
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.LocalizedDataBuilder`1">
+            <summary>
+            Helper for enabling fluent creation of LocalizedData model
+            </summary>
+            <typeparam name="T">Type of value</typeparam>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.LocalizedDataBuilder`1.Set(System.String,`0)">
+            <summary>
+            Set a value for a specific culture
+            </summary>
+            <param name="cultureCode">ISO culture code of value</param>
+            <param name="value">The localized value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.LocalizedDataBuilder`1.Get(System.String)">
+            <summary>
+            Get value for a specific culture code
+            </summary>
+            <param name="cultureCode">ISO culture code to get value for</param>
+            <returns></returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.LocalizedDataBuilder`1.Result">
+            <summary>
+            Builds a LocalizedData list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.PagedResultSet.Total">
+            <summary>
+            The total number of items
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.PagedResultSet.Remaining">
+            <summary>
+            The remaining items that lie after the last id of the item in this result set
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.PagedResultSet.LastId">
+            <summary>
+            The id of the last item in this result set
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.QueryableField">
+            <summary>
+            Representation of a queryable field in PIM
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.QueryableField.Uid">
+            <summary>
+            Unique id of field in PIM
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.QueryableField.Name">
+            <summary>
+            The display name of the field
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.QueryModel">
+            <summary>
+            Definition of general query model
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.QueryModel.BooleanOperator">
+            <summary>
+            The operator of the query. Can be any of:
+                  * And / 0 (All conditions must match)
+                  * Or / 1 (At least one of the provided conditions must match)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.QueryModel.QueryModelType">
+            <summary>
+            The type of query model. Name matches exact name of concrete model implementation
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.SimpleQueryModel">
+            <summary>
+            Simple query model used for querying specific fields
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SimpleQueryModel.Filters">
+            <summary>
+            List of filter conditions
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.BooleanQueryModel">
+            <summary>
+            Query wrapper for sub queries where the BooleanOperator operates between the sub queries. Allows for nested queries
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.BooleanQueryModel.SubQueries">
+            <summary>
+            Sub queries to execute
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.FieldFilterModel">
+            <summary>
+            Field query definition model
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.FieldFilterModel.FieldUid">
+            <summary>
+            Uid of field to query
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.FieldFilterModel.QueryOperator">
+             <summary>
+             Operator to use for query. Can be any of:
+                   * Equals / 0 (Value must start with FilterValue)
+                   * WildcardEquals / 1 (Value must be smaller than FilterValue)
+                   * SmallerThan / 2 (Value must be smaller than FilterValue)
+                   * LargerThan / 3 (Value must be larger than FilterValue)
+                   * IsEmpty / 4 (Value must be empty)
+                   * IsNotEmpty / 5 (Value must not be empty)
+                   * Contains / 6 (Value must contain FilterValue)
+                   * NotContains / 7 (Value must not contain FilterValue)
+                   * NotEquals / 8 (Value must not be exactly equal to FilterValue (not considering casing))
+                   * NotWildcardEquals / 9 (Value must not start with FilterValue)
+                   * InList / 10 (Item field value must match any of the in provided values in FilterList)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.FieldFilterModel.FilterValue">
+            <summary>
+            Value to filter for using the QueryOperator. When QueryOperator is "InList", FilterValue must be an array of values to query for
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.BooleanOperator">
+            <summary>
+            Boolean operator
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.BooleanOperator.And">
+            <summary>
+            All conditions must be met
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.BooleanOperator.Or">
+            <summary>
+            At least one condition must be met
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.QueryOperator">
+            <summary>
+            Query operator
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.Equals">
+            <summary>
+            Value must be exactly equal to (not considering casing)
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.WildcardEquals">
+            <summary>
+            Value must start with
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.SmallerThan">
+            <summary>
+            Value must be smaller than
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.LargerThan">
+            <summary>
+            Value must be larger than
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.IsEmpty">
+            <summary>
+            Value must be empty
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.IsNotEmpty">
+            <summary>
+            Value must not be empty
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.Contains">
+            <summary>
+            Value must contain
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.NotContains">
+            <summary>
+            Value must not contain
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.NotEquals">
+            <summary>
+            Value must not be exactly equal to (not considering casing)
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.NotWildcardEquals">
+            <summary>
+            Value must not start with
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.QueryOperator.InList">
+            <summary>
+            Value must be in provided list
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.SearchModel">
+            <summary>
+            Search model used for searching products or variants in PIM
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SearchModel.IncludeArchived">
+            <summary>
+            Include archived items in result
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SearchModel.QueryModel">
+            <summary>
+            The actual query to get result for
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.SegmentedData`1">
+            <summary>
+            Model for holding segmented data representations for attribute values
+            </summary>
+            <typeparam name="T">type of value that is localized ie. string, decimal etc.</typeparam>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SegmentedData`1.Segment">
+            <summary>
+            The dimension segment of this value
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SegmentedData`1.Dimension">
+            <summary>
+            The dimension this value is segmented on
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SegmentedData`1.Data">
+            <summary>
+            The segmented value
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.SegmentedDataBuilder`1">
+            <summary>
+            Helper for enabling fluent creation of LocalizedData model
+            </summary>
+            <typeparam name="T">Type of value</typeparam>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.SegmentedDataBuilder`1.Set(System.String,`0)">
+            <summary>
+            Set a value for a specific segment
+            </summary>
+            <param name="segmendIdentifier">Identifier of segment</param>
+            <param name="value">Segmented value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.SegmentedDataBuilder`1.Get(System.String)">
+            <summary>
+            Get the value of a specific segment
+            </summary>
+            <param name="segmendIdentifier"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.SegmentedDataBuilder`1.Result">
+            <summary>
+            Build the resulting List of SegmentedData
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.SegmentedLocalizedData`1">
+            <summary>
+            Model for holding segmented and localized data representations for attribute values
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SegmentedLocalizedData`1.CultureCode">
+            <summary>
+            ISO culture code of data
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SegmentedLocalizedData`1.Segment">
+            <summary>
+            Segment of data
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SegmentedLocalizedData`1.Dimension">
+            <summary>
+            Dimension this data is segmented on
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.SegmentedLocalizedData`1.Data">
+            <summary>
+            The segmented and localized value
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.SegmentedLocalizedDataBuilder`1">
+            <summary>
+            Helper for enabling fluent creation of SegmentedLocalizedData model
+            </summary>
+            <typeparam name="T">Type of value</typeparam>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.SegmentedLocalizedDataBuilder`1.Set(System.String,System.String,`0)">
+            <summary>
+            Set a segmented and localized value
+            </summary>
+            <param name="cultureCode">ISO culture code of value</param>
+            <param name="segmendIdentifier">Identifier of segment this value belongs to</param>
+            <param name="value">The segmented and localized value</param>
+            <returns></returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.SegmentedLocalizedDataBuilder`1.Get(System.String,System.String)">
+            <summary>
+            Get a segmented and localized value
+            </summary>
+            <param name="cultureCode">ISO culture code</param>
+            <param name="segmendIdentifier">Segment identifier</param>
+            <returns></returns>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Shared.SegmentedLocalizedDataBuilder`1.Result">
+            <summary>
+            Build the resulting SegmentedLocalizedData list
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Shared.ValueIncludeMode">
+            <summary>
+            Defines which attribute values to return
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.ValueIncludeMode.All">
+            <summary>
+            Return all attribute values
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.ValueIncludeMode.Scopes">
+            <summary>
+            Return values for scopes specified in request
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.ValueIncludeMode.Aliases">
+            <summary>
+            Return values for attribute aliases specified in request
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.ValueIncludeMode.ScopesAndAliases">
+            <summary>
+            Return values for attributes in specified scopes, plus values in the attributes specified by alias
+            </summary>
+        </member>
+        <member name="F:Struct.PIM.Api.Models.Shared.ValueIncludeMode.Uids">
+            <summary>
+            Return values for attribute uids specified in request
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.IncludeValues">
+            <summary>
+            Select if any source of values shall be returned
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.Scopes">
+            <summary>
+            If IncludeValues is Scopes, define which scopes to return values for here
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.Aliases">
+            <summary>
+            If IncludeValues is Aliases, define aliases of the attributes to include values for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.Uids">
+            <summary>
+            If IncludeValues is Uids, define uids of the attributes to include values for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.LimitToCultureCodes">
+            <summary>
+            Only return values for specific languages
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.LimitToSegments">
+            <summary>
+            Only return values for specific dimension segments
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.GlobalListValueReferencesOnly">
+            <summary>
+            Indicate if only uids of referenced to global list values shall be returned instead of the materialized values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Shared.ValueRequestModel.FromTimestamp">
+            <summary>
+            Get attribute values back in time
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeModel">
+            <summary>
+            Represents a change made to an entity in a specific revision
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeModel.EntityType">
+            <summary>
+            Type of entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeModel.EntityId">
+            <summary>
+            The unique id of the entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeModel.RevisionNo">
+            <summary>
+            The revision number assigned to the entity in this transaction
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeModel.DataType">
+            <summary>
+            Reference to the type of data change that was made for this entity in this revision
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeRequestModel">
+            <summary>
+            Model for requesting revision changes
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeRequestModel.EntityType">
+            <summary>
+            Type of entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeRequestModel.EntityId">
+            <summary>
+            Unique id of entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.EntityRevisionChangeRequestModel.RevisionNo">
+            <summary>
+            Revision number
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Transaction.TransactionEntityModel">
+            <summary>
+            Represents information on an entity that is changed in a specific transaction
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionEntityModel.EntityType">
+            <summary>
+            Type of entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionEntityModel.EntityId">
+            <summary>
+            The unique id of the entity
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionEntityModel.RevisionNo">
+            <summary>
+            The revision number assigned to the entity in this transaction
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionEntityModel.TransactionUid">
+            <summary>
+            Unique id of the transaction
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Transaction.TransactionModel">
+            <summary>
+            A transaction represents a single unit of work in the system, in which one or more entities have been created, updated or deleted
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionModel.Uid">
+            <summary>
+            Unique id of the transaction
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionModel.TransactionType">
+            <summary>
+            Description of the type of transaction
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionModel.Username">
+            <summary>
+            Username of the user who performed the transaction
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionModel.StartTimestamp">
+            <summary>
+            The timestamp when the transaction was started
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionModel.CommitTimestamp">
+            <summary>
+            The timestamp when the transaction was committed
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Transaction.TransactionSearchResult">
+            <summary>
+            Represents a result from a transaction search
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionSearchResult.TotalPages">
+            <summary>
+            The total number of pages contained in the search result
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionSearchResult.Page">
+            <summary>
+            The current page which results are returned for
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Transaction.TransactionSearchResult.Transactions">
+            <summary>
+            Transactions for the current page of the search result
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.BatchUpdateVariantModel">
+            <summary>
+            Update model for a variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.BatchUpdateVariantModel.VariantId">
+            <summary>
+            Id of variant to update
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.BatchUpdateVariantModel.UpdateModel">
+            <summary>
+            Model containing updates to make on variant (properties with null values are ignored and does not cause an update)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.BatchUpdateVariantModel`1">
+            <summary>
+            Update model for a variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.BatchUpdateVariantModel`1.VariantId">
+            <summary>
+            Id of variant to update
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.BatchUpdateVariantModel`1.UpdateModel">
+            <summary>
+            Model containing updates to make on variant (properties with null values are ignored and does not cause an update)
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.CreateVariantModel">
+            <summary>
+            Model for creating a new variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.CreateVariantModel.ProductId">
+            <summary>
+            Id of product to attach variant to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.CreateVariantModel.SortOrder">
+            <summary>
+            Sort order of variant compared to other variants of the product (when null, variant is placed after existing variants)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.CreateVariantModel`1.ProductId">
+            <summary>
+            Id of product to attach variant to
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.CreateVariantModel`1.SortOrder">
+            <summary>
+            Sort order of variant compared to other variants of the product (when null, variant is placed after existing variants)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.CreateVariantModel`1.Values">
+            <summary>
+            Object representation of attribute values to set when creating variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.UpdateVariantModel">
+            <summary>
+            Update model containing the updates to make on a variant. Note that properties with null values will be ignored and will not cause an update.
+            This means you should only set properties that shall be updated on the variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel.ProductId">
+            <summary>
+            Id of product to move variant to
+            </summary>
+            <remarks>
+            #Available from 3.2.0
+            </remarks>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel.IsArchived">
+            <summary>
+            Indicate whether the product shall be archived or un-archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel.ArchiveReason">
+            <summary>
+            Reference to the archive reason when archiving variant (if IsArchived is true)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel.SortOrder">
+            <summary>
+            Sort order of variant compared to other variants of the product
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.UpdateVariantModel`1">
+            <summary>
+            Update model containing the updates to make on a variant. Note that properties with null values will be ignored and will not cause an update.
+            This means you should only set properties that shall be updated on the variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel`1.ProductId">
+            <summary>
+            Id of product to move variant to
+            </summary>
+            <remarks>
+            #Available from 3.2.0
+            </remarks>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel`1.IsArchived">
+            <summary>
+            Indicate whether the product shall be archived or un-archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel`1.ArchiveReason">
+            <summary>
+            Reference to the archive reason when archiving variant (if IsArchived is true)
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel`1.SortOrder">
+            <summary>
+            Sort order of variant compared to other variants of the product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.UpdateVariantModel`1.Values">
+            <summary>
+            Object representation of attribute values to update on variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.VariantAttributeValuesModel">
+            <summary>
+            Model containing requested variant attribute values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantAttributeValuesModel.VariantId">
+            <summary>
+            Id of variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.VariantAttributeValuesModel`1">
+            <summary>
+            Model containing requested variant attribute values
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantAttributeValuesModel`1.VariantId">
+            <summary>
+            Id of variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantAttributeValuesModel`1.Values">
+            <summary>
+            Object representation of attribute values requested for this variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.VariantModel">
+            <summary>
+            Variant model holding basic information about the variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.Id">
+            <summary>
+            Id of variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.Name">
+            <summary>
+            Display name of variant (Dictionary of ISO culture code and name)
+            Note: Available from 3.7.0
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.ProductId">
+            <summary>
+            Id of product to which variant is attached
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.SortOrder">
+            <summary>
+            #Available from v.3.2.0
+            The sort order of the variant compared to other variants of this product
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.Created">
+            <summary>
+            Timestamp of variant creation
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.CreatedBy">
+            <summary>
+            Username of the user who created the variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.LastModified">
+            <summary>
+            Timestamp of the last variant update
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.LastModifiedBy">
+            <summary>
+            Username of the user who made the last change to the variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.IsArchived">
+            <summary>
+            Indicates whether the variant is archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.ArchiveReason">
+            <summary>
+            The uid of the archive reason selected when the variant was archived
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.ProductStructureUid">
+            <summary>
+            The product structure used by this variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantModel.DefiningAttributes">
+            <summary>
+            The unique ids of the attributes acting as defining attributes for this variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.VariantReferences">
+            <summary>
+            Model holding references from other entities to a variant
+            </summary>
+        </member>
+        <member name="M:Struct.PIM.Api.Models.Variant.VariantReferences.#ctor">
+            <summary>
+            Default constructor, initializes lists
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantReferences.VariantId">
+            <summary>
+            Id of the referenced variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantReferences.ReferencingCategories">
+            <summary>
+            List of categories referencing this variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantReferences.ReferencingProducts">
+            <summary>
+            List of products referencing this variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantReferences.ReferencingVariants">
+            <summary>
+            List of variants referencing this variant
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantReferences.ReferencingGlobalListValues">
+            <summary>
+            List of global list values referencing this variant
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.VariantsResultSet">
+            <summary>
+            Result set of variants from a variant query
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantsResultSet.Variants">
+            <summary>
+            Variants in result set
+            </summary>
+        </member>
+        <member name="T:Struct.PIM.Api.Models.Variant.VariantValuesRequestModel">
+            <summary>
+            Define which categories to fetch data for and what data to fetch
+            </summary>
+        </member>
+        <member name="P:Struct.PIM.Api.Models.Variant.VariantValuesRequestModel.VariantIds">
+            <summary>
+            Ids of products to return
+            </summary>
+        </member>
+    </members>
+</doc>

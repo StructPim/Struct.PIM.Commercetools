@@ -1,0 +1,28 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "importHelpers": true,
+    "sourceMap": false,
+    "declaration": false,
+    "module": "es2020",
+    "target": "ES2017",
+    "lib": [
+      "ES2017",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "typescript",
+      "./cypress/support",
+      "cypress-wait-until"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}
